@@ -148,3 +148,22 @@
 // //abcd.bind(obj); // but ye khali bind karega run ni krega
 // var bindfunc = abcd.bind(obj);
 // bindfunc()
+
+
+//--- pure function:- wo func jinka value call krne pe change na ho
+
+// function abcd(a,b){
+//     return a*b
+// }
+// var ans1 = abcd(1,2);
+// var ans2 = abcd(1,2);
+
+// impure function:- ye same value ni dega call krne me ya global var ki value change kr dega
+
+// function abcd(val){
+//     return Math.random()*val
+// }
+// var ans1 = abcd(2)
+// var ans2 = abcd(2)
+
+
