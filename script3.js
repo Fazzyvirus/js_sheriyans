@@ -47,4 +47,104 @@
 
 // --- new keyword
 // new => jab bbhi new lagta hai hmesha ek blan object apne man me bana lo.
+// {
 
+// }
+
+
+//--- iife - immediately invoked function expression
+// iife hai function ko turant chalane ki kala, is tarike se ki hm log koi private variable bana paye
+
+// var ans = (function(){
+//     var privateval = 12;
+//     return {
+//         getter: function(){
+//             console.log(privateval);
+//         },
+//         setter: function(val){
+//             privateval = val;
+//         }
+//     }
+// })()
+
+
+// --- Prototype:- javascript ne objects ko use krne ke liye bht se predefined properties banai hai jinko hm prototype kehte hai.
+
+//example:-
+// let arr = [1,2,3,4,5,6]
+// arr.length(); // yaha pe .length ek prototype hai.
+
+
+//--- prototype inheritance:- jab hm kisi 1 object ke features or properties kisi dusre object me dena ya inherit krna chahte hai tb hm prototypal inheritance ka use krte hai.
+
+//example:-
+// var human = {
+//     canFly: false,
+//     canTalk: true,
+//     canSwim: true,
+//     haveEmotions: true,
+//     hasFourLegs: false
+// }
+
+// var sheriyansStudent = {
+//     canCode: true,
+//     canMakeAmazingWebsites: true
+// }
+
+// sheriyansStudent.__proto__ = human
+
+
+// ---this call apply bind
+
+// jab bhi tm kuchh lokh rhe ho check kro kya usme koi func object ya scope "{}" bana hai matlab tm local ni balki global scope me ho
+
+// in short jb bhi koi cheez {} brackets me ni hoti usko global scope kehte h.
+
+// console.log(this); // global scope me this ki value hoti hai "window"
+
+// function scope me bhi this ki value "window hi rehti h"
+// function abcd(){
+//     console.log(this);
+// }
+// abcd()
+
+// ek function jo object k andar ho, use method kehte hai
+// method scope me this ki value object aati hai
+// var obj = {
+//     name:"faisal",
+//     baatKaro: function(){
+//         console.log(this);
+//     }
+// }
+// obj.baatKaro()
+
+// note:- in any method, "this" keyword always refer to parent object.
+
+// call => agr tmhare paas koi func hai or koi obj hai or tmhe func chalana hai or bydefault jo this ki value window hai use window na rkh kr point krwana hai kisi obj ki trf.
+
+//example:
+// function abcd(){
+//     console.log(this);
+// }
+// var obj = {name:"faisal"}
+// abcd.call(obj);
+
+// apply :-
+//jab bhi apko ek func chalana hai jisme this ki value kuchh or hai but apko kuchh or krna hai to yaha pe use krte h
+
+// function abcd(val1, val2){
+//     console.log(this,val1,val2);
+// }
+// var obj = {name:"faisal"}
+// abcd.apply(obj,[1,2]);
+
+//bind:- ye func ko obj se bind kr dega or naya func dedega but chalaega ni.
+
+//example:
+// function abcd(){
+//     console.log(this);
+// }
+// var obj = {name:"faisal"}
+// //abcd.bind(obj); // but ye khali bind karega run ni krega
+// var bindfunc = abcd.bind(obj);
+// bindfunc()
