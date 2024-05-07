@@ -46,7 +46,7 @@
 
 
 // --- new keyword
-// new => jab bbhi new lagta hai hmesha ek blan object apne man me bana lo.
+// new => jab bbhi new lagta hai hmesha ek blank object apne man me bana lo.
 // {
 
 // }
@@ -96,7 +96,7 @@
 
 // ---this call apply bind
 
-// jab bhi tm kuchh lokh rhe ho check kro kya usme koi func object ya scope "{}" bana hai matlab tm local ni balki global scope me ho
+// jab bhi tm kuchh likh rhe ho check kro kya usme koi func object ya scope "{}" bana hai matlab tm local ni balki global scope me ho
 
 // in short jb bhi koi cheez {} brackets me ni hoti usko global scope kehte h.
 

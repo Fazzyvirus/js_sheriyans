@@ -14,7 +14,7 @@
 // let & const doesn't adds itself to the windows objects
 //let b = 13; // it will not add itself to the window object
 
-//-- execution context matlab jab nhi hm function chalaenge to fnc apna ek khudka imaginary container bana lega jismein uski teen cheeze hongi:
+//-- execution context matlab jab bhi hm function chalaenge to fnc apna ek khudka imaginary container bana lega jismein uski teen cheeze hongi:
 // 1) variable
 // 2) function inside that parent function
 // 3) lexical environment of that function

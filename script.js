@@ -11,7 +11,7 @@
 
 // -primitive - any value that doesn't have any type of brackets are primitive.
 
-//-reference = [] () {} - aisi koi bhi value jicko copy rne par real coopy ni hota, balki us main value ka reference pass hojata hai , use hm reference value kehte hai, aur jiska copy krne pe real copy ho jae use primitive value kehte hai.
+//-reference = [] () {} - aisi koi bhi value jisko copy krne par real coopy ni hota, balki us main value ka reference pass hojata hai , use hm reference value kehte hai, aur jiska copy krne pe real copy ho jae use primitive value kehte hai.
 
 // -Conditionals - if else else-if
 // Jab bhi baat agar magar pr aegi, ya fir baat aegi aisa hua to ye kro, waisa ho jae to wo kro.
@@ -36,12 +36,10 @@
 // }
 // chaiBnaoOrPiyo();
 
-// function abcd(a){ 
-// // bracket () ke andr jo hai wo parameter hai
+// function abcd(a){ // bracket () ke andr jo hai wo parameter hai
 //     console.log(a);
 // }
-// abcd(155); 
-// bracket () ke andr jo ha wo argument hai
+// abcd(155); // bracket () ke andr jo ha wo argument hai
 
 // -arguents - real value jo hm dete hai func chlate wqt
 // parameter - variable jinme value store hoti hai arguments wali
